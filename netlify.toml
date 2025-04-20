@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "build/client" # Remix'in client build çıktısı
+
+[functions]
+  directory = "build/server" # Remix'in server build çıktısı (serverless fonksiyonlar)
+  node_bundler = "esbuild" # Netlify'ın fonksiyonları paketlemek için kullanacağı bundler
+
+# Ortam değişkenlerinizi Netlify UI üzerinden veya bu dosyada tanımlayabilirsiniz.
+# Örneğin:
+# [build.environment]
+#   SUPABASE_URL = "your_supabase_url"
+#   SUPABASE_ANON_KEY = "your_supabase_anon_key"
